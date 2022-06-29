@@ -60,20 +60,24 @@ export const Division = () => {
 
     return (
         <View style={styles.container}>
-            <FlatList
-                data={CardPairList}
-                renderItem={({ item }) => {
-                    return (
-                        <View style={styles.container}>
-                            <Image style={styles.image} source={item.imagem} />
-                            <View style={styles.division}>
-                                <Text style={styles.desc}>{item.descricao}</Text>
-                                <Image source={more} style={styles.more}/>
+            <View style={styles.photos}>
+                <FlatList
+                    data={CardPairList}
+                    renderItem={({ item }) => {
+                        return (
+                            <View>
+                                <View style={styles.division}>
+                                    <Image style={styles.image} source={item.imagem} />
+                                </View>
+                                <View style={styles.division}>
+                                    <Text style={styles.desc}>{item.descricao}</Text>
+                                    <Image source={more} style={styles.more} />
+                                </View>
                             </View>
-                        </View>
-                    )
-                }}
-            />
+                        )
+                    }}
+                />
+            </View>
         </View>
     )
 }

@@ -4,13 +4,12 @@ import { Division } from './../components/division';
 import { Header } from './../components/header';
 import styles from './styles';
 import { Navbar } from './../components/navbar';
+import { LoginHeader } from '../components/loginHeader';
 
-export const Home = () => {
+export const Login = () => {
     return (
         <View style={styles.container}>
-            <Header />
-            <Division />
-            <Navbar />
+            <LoginHeader />
         </View>
     )
 }
