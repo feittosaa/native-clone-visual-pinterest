@@ -62,10 +62,11 @@ export const Division = () => {
         <View style={styles.container}>
             <View style={styles.photos}>
                 <FlatList
+                    numColumns={2}
                     data={CardPairList}
                     renderItem={({ item }) => {
                         return (
-                            <ScrollView contentContainerStyle={{ width: "100%" }} style={[{ flexDirection: "row" }]}>
+                            <ScrollView contentContainerStyle={{ width: "50%" }} style={[{ flexDirection: "row" }]}>
                                 <TouchableOpacity style={[styles.division, {}]}>
                                     <Image style={styles.image} source={item.imagem} />
                                 </TouchableOpacity>

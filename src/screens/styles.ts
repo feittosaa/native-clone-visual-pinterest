@@ -99,9 +99,9 @@ const styles = StyleSheet.create({
         width: "100%",
         padding: 4,
         maxHeight: 300,
-        maxWidth: "50%",
-        borderRadius: 10,
-        flexBasis: '50%',
+        borderRadius: 12,
+        marginLeft: 4,
+        flexBasis: '96%',
     },
     division: {
         flexBasis: '50%',
