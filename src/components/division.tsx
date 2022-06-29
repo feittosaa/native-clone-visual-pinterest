@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FlatList, Image, Text, View } from "react-native";
+import { FlatList, Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import acdc from '../assets/images/acdc.jpg';
 import card from '../assets/images/card.jpg';
 import guitar from '../assets/images/guitar.jpg';
@@ -65,19 +65,18 @@ export const Division = () => {
                     data={CardPairList}
                     renderItem={({ item }) => {
                         return (
-                            <View>
-                                <View style={styles.division}>
+                            <ScrollView contentContainerStyle={{ width: "100%" }} style={[{ flexDirection: "row" }]}>
+                                <TouchableOpacity style={[styles.division, {}]}>
                                     <Image style={styles.image} source={item.imagem} />
-                                </View>
+                                </TouchableOpacity>
                                 <View style={styles.division}>
                                     <Text style={styles.desc}>{item.descricao}</Text>
-                                    <Image source={more} style={styles.more} />
                                 </View>
-                            </View>
+                            </ScrollView>
                         )
                     }}
                 />
             </View>
-        </View>
+        </View >
     )
 }
