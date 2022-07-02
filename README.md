@@ -1,4 +1,4 @@
-# native-clone-visual-pinterest
+# INFOS;
 
 <h4>links dos sites usados para pegar os icons e imagens:<h4/>
 
